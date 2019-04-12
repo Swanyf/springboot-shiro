@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:shiro="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div shiro:hasPermission="user:add">
+        <a href="user/add">跳转到添加页面</a>
+    </div>
+    <div shiro:hasPermission="user:update">
+        <a href="user/update">跳转到修改页面</a>
+    </div>
+
+    <a href="/do/login">登录</a>
+</body>
+</html>
